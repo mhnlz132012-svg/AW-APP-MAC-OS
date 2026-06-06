@@ -2,13 +2,10 @@
   "name": "aw-app",
   "productName": "AW App",
   "version": "1.0.0",
-  "description": "AW App",
   "main": "main.js",
-  "author": "AW",
-  "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "dist": "electron-builder"
+    "dist": "electron-builder --mac"
   },
   "devDependencies": {
     "electron": "^37.0.0",
@@ -17,13 +14,9 @@
   "build": {
     "appId": "com.aw.app",
     "productName": "AW App",
-    "publish": "never",
+    "publish": null,
     "mac": {
-      "category": "public.app-category.education",
       "target": ["dmg", "zip"]
-    },
-    "dmg": {
-      "format": "ULFO"
     }
   }
 }
